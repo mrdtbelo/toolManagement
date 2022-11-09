@@ -6,10 +6,9 @@ public class DrillingMachine {
     private double price;
     private boolean broken;
 
-    public DrillingMachine(){
+    public DrillingMachine() {
         this.name = "drillingMachine";
-
+        this.watt = (int) (800 + Math.random() * 1200);
 
     }
 }
-
