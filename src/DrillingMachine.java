@@ -7,6 +7,8 @@ public class DrillingMachine {
     private boolean broken;
 
     public DrillingMachine(){
+        this.name = "drillingMachine";
+
 
     }
 }
