@@ -1,5 +1,4 @@
 public class MainProgram {
-
     public static void main(String[] args) {
 
         DrillingMachine d1 = new DrillingMachine();

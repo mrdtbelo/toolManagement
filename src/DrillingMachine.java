@@ -60,7 +60,7 @@ public class DrillingMachine {
     }
 
     // (210) Aufgabe 4
-    public double getPrice() {
+    public double getPrice(){
         return price;
     }
 
