@@ -67,10 +67,35 @@ public class DrillingMachine {
     public boolean isInexpensive() {
         if (watt > 500 && price < 80) {
             System.out.println("preiswert!!");
+            return true;
         } else {
             System.out.println("nicht  preiswert!!");
+            return false;
+        }
+    }
+
+    // (210) Aufgabe 5
+    public boolean increasePriceByPercentage(double percentage){
+        if(price > 0.0){
+            price = price + percentage;
+            if(price > 100){
+                return true;
+            }
         }
         return false;
+    }
+
+    public boolean repair2(){
+        if(broken == true){
+            repair();
+            return true;
+        }
+        return false;
+    }
+
+    public String getInfo(){
+        return "Kaufen Sie den " + name + " der " + age + " Jahre alt ist. " +
+                "Die Leistung mit " + watt + " kostet auch nur " + price + " Euro. Greifen sie zu"  ;
     }
 }
 
